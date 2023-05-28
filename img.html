@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- <script>
+    window.navigator.appVersion.indexOf('Trident') != -1 && alert('Please use Google Chrome or Firefox!');
+</script> -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style type="text/css">
+        * {
+            margin: 0;
+        }
+
+        body {
+            padding: 0px 0;
+            overflow-x: hidden;
+        }
+
+        .wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .wrap img {
+            border-radius: 10px;
+            margin: 5px;
+            /* padding: 5px; */
+            height: 256px;
+            background: #777;
+            flex-grow: 1;
+            object-fit: cover;
+            transition: .3s;
+        }
+
+        .wrap:after {
+            display: block;
+            content: '';
+            flex-grow: 9999;
+        }
+
+        .wrap img:hover {
+            border-radius: 0px;
+            transform: scale(1.2);
+            box-shadow: 0 0 20px #fff;
+            z-index: 9999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap"></div>
+    <script>
+        var wrap = document.querySelector('.wrap');
+        var src = ["Untitled.png"];
+        for (var i = 0; i < src.length; i++) {
+            let a = document.createElement('a');
+            let img = document.createElement('img');
+            img.id = 'imgno' + i;
+            img.src = src[i];
+            wrap.appendChild(a);
+            a.appendChild(img);
+            a.href = img.src;
+
+            // img.addEventListener("click", () => {
+            //     let img2 = document.getElementById(img.id);
+            //     alert(img2.src);
+            // });
+        }
+    </script>
+    <script defer>
+
+    </script>
+</body>
+
+</html>
