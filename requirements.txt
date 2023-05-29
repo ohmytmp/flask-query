@@ -1,2 +1,4 @@
 flask
-ohmytmp
+ohmytmp >= 0.0.5
+ohmytmp-simimg >= 0.0.2
+ohmytmp-taggy >= 0.0.2
