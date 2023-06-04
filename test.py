@@ -19,6 +19,7 @@ ti = TagInterpreter()
 ai.register(si)
 ai.register(ti)
 ai.walk('../example')
+ai.walk('./')
 print(si.data)
 print(ti.data)
 
